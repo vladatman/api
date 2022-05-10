@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Response   xmlns="https://www.w3schools.com"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://www.w3schools.com amazonXmlSchema.xsd">
+    <Result>
+        <id>1</id>
+        <title>Amar Akbar Anthony</title>
+        <director>Manmohan Desai</director>
+        <country>India</country>
+        <release>1977</release>
+        <duration>172 min</duration>
+        <genre>Action, Adventure, Classic Movies, Comedies</genre>
+    </Result>
+  </Response>

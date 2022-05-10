@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "JSON Schema for console games",
+    "description": "List of games developed for console.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Game id",
+            "minimum": 0
+        },
+        "title": {
+            "type": "string",
+            "description": "Game title"
+        },
+        "console": {
+            "type": "string",
+            "description": "Console type"
+        },
+        "genre": {
+            "type": "string",
+            "description": "Game genre"
+        },
+        "developer": {
+            "type": "string",
+            "description": "Game developer"
+        },
+        "sales": {
+            "type": "number",
+            "description": "The global sales in millions nasales",
+            "minimum": 0,
+            "maximum": 100,
+            "multipleOf": 0.01
+        },
+        "releseDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Game relese date"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "JSON Schema for netfix movies",
+    "description": "List of netflix movies.",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Movie id",
+            "minimum": 0
+        },
+        "title": {
+            "type": "string",
+            "description": "Movie title"
+        },
+        "director": {
+            "type": "string",
+            "description": "Movie director"
+        },
+        "country": {
+            "type": "string",
+            "description": "Country where movie were filmed"
+        },
+        "release": {
+            "type": "number",
+            "description": "Movie release year",
+            "minimum": 1900,
+            "maximum": 2021
+        },
+        "duration": {
+            "type": "string",
+            "description": "Duration of the movie"
+        },
+        "genre": {
+            "type": "string",
+            "description": "Genre of the movie"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Response   xmlns="https://www.w3schools.com"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://www.w3schools.com amazonXmlSchema.xsd">
+  <Result>
+  <id>1</id>
+  <console>PS3</console>
+  <genre>Action</genre>
+  <developer>Omega Force</developer>
+  <totalSales>20.32</totalSales>
+  <release>2005-03-22</release>
+  </Result>
+  </Response>

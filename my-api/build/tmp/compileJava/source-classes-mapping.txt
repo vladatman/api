@@ -1,0 +1,24 @@
+myapi/steam/SteamGame.java
+ myapi.steam.SteamGame
+myapi/netflix/NetflixShowController.java
+ myapi.netflix.NetflixShowController
+myapi/console/ConsoleGame.java
+ myapi.console.ConsoleGame
+myapi/console/ConsoleGameController.java
+ myapi.console.ConsoleGameController
+myapi/MyApiApplication.java
+ myapi.MyApiApplication
+myapi/steam/SteamGameController.java
+ myapi.steam.SteamGameController
+myapi/steam/SteamGameService.java
+ myapi.steam.SteamGameService
+myapi/console/ConsoleGameRepository.java
+ myapi.console.ConsoleGameRepository
+myapi/console/ConsoleGameService.java
+ myapi.console.ConsoleGameService
+myapi/netflix/NetflixShowRepository.java
+ myapi.netflix.NetflixShowRepository
+myapi/netflix/NetflixShow.java
+ myapi.netflix.NetflixShow
+myapi/steam/SteamGameRepository.java
+ myapi.steam.SteamGameRepository

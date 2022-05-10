@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Data</title>
+	<link rel="stylesheet" type="text/css" href="view.css" media="all">
+	<script type="text/javascript" src="scripts/view.js"></script>
+	<script type="text/javascript" src="scripts/calendar.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body id="main_body">
+
+	<img id="top" src="img/top.png" alt="">
+	<div id="form_container">
+		<div class="buttons_click">
+			<p id="console" class="active-form">Console</p>
+			<p id="netflix">Netflix</p>
+			<p id="steam">Steam</p>
+		</div>
+		<h1><a>Untitled Form</a></h1>
+		<div class="wrapper">
+			<form id="form_39090" class="appnitro" method="post" action="">
+				<div class="form_description">
+					<h2>Console Form table</h2>
+					<p></p>
+				</div>
+				<ul>
+
+					<li id="console_title">
+						<label class="description" for="element_1">Title</label>
+						<div>
+							<input id="element_1" name="console_title" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="console_console">
+						<label class="description" for="element_2">Console</label>
+						<div>
+							<input id="element_2" name="console_console" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="console_genre">
+						<label class="description" for="element_3">Genre </label>
+						<div>
+							<input id="element_3" name="console_genre" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="console_developer">
+						<label class="description" for="element_4">Developer </label>
+						<div>
+							<input id="element_4" name="console_developer" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="console_totalSales">
+						<label class="description" for="element_5">Total sales </label>
+						<div>
+							<input id="element_5" name="console_totalSales" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="console_date">
+						<label class="description" for="element_7">Release date </label>
+						<span>
+							<input id="element_7_1" name="element_7_1" class="element text" size="2" maxlength="2"
+								value="" type="text"> /
+							<label for="element_7_1">MM</label>
+						</span>
+						<span>
+							<input id="element_7_2" name="element_7_2" class="element text" size="2" maxlength="2"
+								value="" type="text"> /
+							<label for="element_7_2">DD</label>
+						</span>
+						<span>
+							<input id="element_7_3" name="element_7_3" class="element text" size="4" maxlength="4"
+								value="" type="text">
+							<label for="element_7_3">YYYY</label>
+						</span>
+
+						<span id="calendar_7">
+							<img id="cal_img_7" class="datepicker" src="img/calendar.gif" alt="Pick a date.">
+						</span>
+						<script type="text/javascript">
+							Calendar.setup({
+								inputField: "element_7_3",
+								baseField: "element_7",
+								displayArea: "calendar_7",
+								button: "cal_img_7",
+								ifFormat: "%B %e, %Y",
+								onSelect: selectDate
+							});
+						</script>
+
+					</li>
+
+					<li class="buttons">
+						<input type="hidden" name="form_id" value="39090" />
+
+						<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+					</li>
+				</ul>
+			</form>
+			<form id="form_39091" class="appnitro hide-form" method="post" action="">
+				<div class="form_description">
+					<h2>Netflix Form Table</h2>
+					<p></p>
+				</div>
+				<ul>
+
+					<li id="netflix_title">
+						<label class="description" for="element_1">Title </label>
+						<div>
+							<input id="element_1" name="netflix_title" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="netflix_director">
+						<label class="description" for="element_2">Founder </label>
+						<div>
+							<input id="element_2" name="netflix_director" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="netflix_country">
+						<label class="description" for="element_3">Country </label>
+						<div>
+							<input id="element_3" name="netflix_country" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="netflix_duration">
+						<label class="description" for="element_4">Duration </label>
+						<div>
+							<input id="element_4" name="netflix_duration" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="netflix_genre">
+						<label class="description" for="element_5">Genre </label>
+						<div>
+							<input id="element_5" name="netflix_genre" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="netflix_date">
+						<label class="description" for="element_6">Release Date </label>
+						<div>
+							<input id="element_6" name="netflix_date" class="element text medium" type="number"
+								maxlength="255" value="" />
+						</div>
+
+
+
+					</li>
+
+					<li class="buttons">
+						<input type="hidden" name="form_id" value="39090" />
+
+						<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+					</li>
+				</ul>
+			</form>
+			<form id="form_39092" class="appnitro hide-form" method="post" action="">
+				<div class="form_description">
+					<h2>Steam Form table</h2>
+					<p></p>
+				</div>
+				<ul>
+
+					<li id="steam_title">
+						<label class="description" for="element_1">Title </label>
+						<div>
+							<input id="element_1" name="steam_title" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="steam_developer">
+						<label class="description" for="element_2">Developer </label>
+						<div>
+							<input id="element_2" name="steam_steam_developer" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="steam_genres">
+						<label class="description" for="element_3">Genres </label>
+						<div>
+							<input id="element_3" name="steam_genres" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="steam_price">
+						<label class="description" for="element_4">Price </label>
+						<div>
+							<input id="element_4" name="steam_price" class="element text medium" type="text"
+								maxlength="255" value="" />
+						</div>
+					</li>
+					<li id="steam_">
+						<label class="description" for="element_5">Release date </label>
+						<span>
+							<input id="element_5_1" name="steam_dateD" class="element text" size="2" maxlength="2"
+								value="" type="text"> /
+							<label for="element_5_1">MM</label>
+						</span>
+						<span>
+							<input id="element_5_2" name="steam_dateM" class="element text" size="2" maxlength="2"
+								value="" type="text"> /
+							<label for="steam_dateM">DD</label>
+						</span>
+						<span>
+							<input id="element_5_3" name="steam_dateY" class="element text" size="4" maxlength="4"
+								value="" type="text">
+							<label for="element_5_3">YYYY</label>
+						</span>
+
+						<span id="calendar_5">
+							<img id="cal_img_5" class="datepicker" src="img/calendar.gif" alt="Pick a date.">
+						</span>
+						<script type="text/javascript">
+							Calendar.setup({
+								inputField: "element_5_3",
+								baseField: "element_5",
+								displayArea: "calendar_5",
+								button: "cal_img_5",
+								ifFormat: "%B %e, %Y",
+								onSelect: selectDate
+							});
+						</script>
+
+					</li>
+
+					<li class="buttons">
+						<input type="hidden" name="form_id" value="39090" />
+
+						<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+					</li>
+				</ul>
+			</form>
+		</div>
+		<button class="button-data">Get date presentetion</button>
+		<div class="dataGrafic">
+			<canvas id="myChart" width="600px" height="300px"></canvas>
+			<canvas id="myChartB" width="600px" height="300px"></canvas>
+		</div>
+	</div>
+	<img id="bottom" src="img/bottom.png" alt="">
+
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>

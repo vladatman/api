@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xS="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.w3schools.com"
+           elementFormDefault="qualified"
+           xmlns="https://www.w3schools.com">
+    <xs:complexType name="Response">
+        <xs:sequence>
+            <xs:complexType name="Result">
+                <xs:sequence>
+                    <xs:element name="id">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minInclusive value="0"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element> 
+                    <xs:element type="xs:string" name="title"/>
+                    <xs:element type="xs:date" name="release"/>
+                    <xs:element type="xs:string" name="developer"/>
+                    <xs:element type="xs:string" name="genre"/>
+                    <xs:element type="xs:float" name="price"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
+

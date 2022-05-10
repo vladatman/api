@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Response   xmlns="https://www.w3schools.com"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://www.w3schools.com amazonXmlSchema.xsd">
+    <Result>
+        <id>1</id>
+        <title>Counter-Strike</title>
+        <release>2000-11-01</release>
+        <developer>Valve</developer>
+        <genre>Action</genre>
+        <price>7.19</price>
+    </Result>
+  </Response>
